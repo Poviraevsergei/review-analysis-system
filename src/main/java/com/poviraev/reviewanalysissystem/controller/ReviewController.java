@@ -87,11 +87,9 @@ public class ReviewController {
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
     public ResponseEntity<Void> delete(@PathVariable UUID id) {
         reviewService.delete(id);
         return ResponseEntity.noContent().build();
     }
 }
 
-//TODO: validation, exceptionHandler, documentation

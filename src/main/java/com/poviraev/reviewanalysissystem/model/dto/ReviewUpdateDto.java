@@ -1,9 +1,11 @@
 package com.poviraev.reviewanalysissystem.model.dto;
 
-import java.util.Map;
+import java.util.UUID;
 
 public record ReviewUpdateDto(
         String text,
         Integer rating,
-        ReviewStatus status
-) {}
+        UUID userId,
+        String location
+) {
+}
