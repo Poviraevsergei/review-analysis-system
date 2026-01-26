@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.poviraev"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 description = "review-analysis-system"
 
 java {
@@ -26,6 +26,7 @@ dependencies {
     implementation("org.postgresql:postgresql:42.7.7")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
+    implementation("org.liquibase:liquibase-core:5.0.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
